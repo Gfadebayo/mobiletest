@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mobile Test</string>
+
+    <string name="all_state">None</string>
+
+    <string name="all">All</string>
+
+    <string name="ride_id">Ride Id : %d</string>
+    <string name="origin_station">Origin Station : %d</string>
+    <string name="station_path">station_path : [%s]</string>
+    <string name="date">Date : %s</string>
+    <string name="distance">Distance : %d</string>
+
+    <string name="newest">Newest</string>
+    <string name="upcoming">Upcoming(%d)</string>
+    <string name="past">Past(%d)</string>
+</resources>

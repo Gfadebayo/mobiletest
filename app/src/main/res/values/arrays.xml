@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tag_names">
+        <item>@string/newest</item>
+        <item>@string/upcoming</item>
+        <item>@string/past</item>
+    </string-array>
+</resources>

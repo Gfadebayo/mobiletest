@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="228dp"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="23dp"
+    android:background="@drawable/shape_dialog_filter_background"
+    android:backgroundTint="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filters"
+        android:textSize="20sp"
+        android:textColor="@color/dialog_filter"
+        android:fontFamily="@font/inter_light"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/dialog_filter_divider"/>
+
+    <Spinner
+        style="@style/Spinner.Filter"
+        android:id="@+id/spinner_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="6dp"
+        android:layout_marginTop="20dp"
+        tools:entries="@array/spin"/>
+
+    <Spinner
+        style="@style/Spinner.Filter"
+        android:id="@+id/spinner_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"/>
+</LinearLayout>

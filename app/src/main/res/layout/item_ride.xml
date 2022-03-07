@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:background="@color/ride_card"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="27dp"
+        android:paddingVertical="24dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_map"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:layout_gravity="center_horizontal"
+            app:shapeAppearanceOverlay="@style/ShapeOverlay.Map"
+            tools:srcCompat="@drawable/nia"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp">
+
+            <TextView
+                android:id="@+id/text_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@drawable/shape_city_background"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="12sp"
+                tools:text="City Name" />
+
+            <TextView
+                android:id="@+id/text_state_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/shape_city_background"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="12sp"
+                tools:text="State Name" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_ride_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.RideInfo"
+            tools:text="Ride Id : 002" />
+
+        <TextView
+            android:id="@+id/text_origin_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAppearance="@style/TextAppearance.RideInfo"
+            tools:text="Origin Station : 20" />
+
+        <TextView
+            android:id="@+id/text_station_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAppearance="@style/TextAppearance.RideInfo"
+            tools:text="station_path : [20, 39, 40, 42, 54, 63, 72, 88, 98]" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAppearance="@style/TextAppearance.RideInfo"
+            tools:text="Date : 15th Feb 2022 16:33" />
+
+        <TextView
+            android:id="@+id/text_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAppearance="@style/TextAppearance.RideInfo"
+            tools:text="Distance : 0" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
